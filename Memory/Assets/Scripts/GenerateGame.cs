@@ -290,6 +290,6 @@ public class GenerateGame : MonoBehaviour
     // Button to reset the scene
     public void ResetScene()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
     }
 }

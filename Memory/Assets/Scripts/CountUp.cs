@@ -9,7 +9,7 @@ public class CountUp : MonoBehaviour
 
     public TextMeshProUGUI timerText;
     private float secondsCount;
-    private int minuteCount;
+    private int minutesCount;
 
     void Update()
     {
@@ -22,11 +22,32 @@ public class CountUp : MonoBehaviour
     public void UpdateTimerUI()
     {
         secondsCount += Time.deltaTime;
-        timerText.text = minuteCount + "m:" + (int)secondsCount + "s";
+
+        string secondsText = "";
+        string minutesText = "";
+
+        if (secondsCount < 10)
+        {
+            secondsText = "0" + (int)secondsCount;
+        } else
+        {
+            secondsText = "" + (int)secondsCount;
+        }
+
+        if (minutesCount < 10)
+        {
+            minutesText = "0" + (int)minutesCount;
+        }
+        else
+        {
+            minutesText = "" + (int)minutesCount;
+        }
+
+        timerText.text = minutesText + ":" + secondsText;
 
         if (secondsCount >= 60)
         {
-            minuteCount++;
+            minutesCount++;
             secondsCount = 0;
         }
     }

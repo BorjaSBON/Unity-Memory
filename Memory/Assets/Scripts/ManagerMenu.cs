@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class ManagerMenu : MonoBehaviour
 {
@@ -33,5 +34,35 @@ public class ManagerMenu : MonoBehaviour
     {
         Time.timeScale = 1.0F;
         menu.SetActive(false);
+    }
+
+    public void PlayEasy()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    public void PlayMedium()
+    {
+        SceneManager.LoadScene(5);
+    }
+
+    public void PlayHard()
+    {
+        SceneManager.LoadScene(6);
+    }
+
+    public void PlayTemplate()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
     }
 }
