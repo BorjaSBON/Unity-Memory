@@ -1,6 +1,6 @@
 # Unity-Memory
 
-This game is a recreation of the famous Memory game created in Unity. The theme of the game are the elements of the periodic table to learn the namea and acronyms of the different elements. In this way the player can learn while having fun.
+This game is a recreation of the famous Memory game created in Unity. The theme of the game are the elements of the periodic table to learn the names and acronyms of the different elements. In this way the player can learn while having fun.
 
 ## Content
 
